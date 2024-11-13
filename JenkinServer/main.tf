@@ -69,7 +69,7 @@ module "ec2_instance" {
 
   instance_type               = var.instance_type
   ami                         = data.aws_ami.example.id
-  key_name                    = "awsdevopskey"
+  key_name                    = "keypair"
   monitoring                  = true
   vpc_security_group_ids      = [module.sg.security_group_id]
   subnet_id                   = module.vpc.public_subnets[0]

@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "bucket-lambda-s3-24"
+    bucket = "pawanbucket2024"
     key    = "jenkins/terraform.tfstate"
     region = "us-east-1"
   }
