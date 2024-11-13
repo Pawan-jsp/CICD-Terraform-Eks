@@ -6,10 +6,17 @@ sudo apt install fontconfig openjdk-17-jre
 
 # Jenkins installation
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+<<<<<<< HEAD
     https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
     https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
     /etc/apt/sources.list.d/jenkins.list >/dev/null
+=======
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+>>>>>>> 40aaa102092ecab134d2a66c8909270ac0b38c10
 sudo apt-get update
 sudo apt-get install jenkins
 
